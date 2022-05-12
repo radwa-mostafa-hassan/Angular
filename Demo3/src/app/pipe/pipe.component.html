@@ -1,0 +1,21 @@
+<div>
+    <h1>Lab 3</h1>
+    power-to-x : {{10|powerTox:2}}
+    <br>
+    Array :
+    <br>
+    <div class="row">
+        <div class="col-2">
+            <input type="text" class="form-control" placeholder="Search" [(ngModel)]="name" id="listSearch">
+        </div>
+    </div>
+    <ul>
+        <li *ngFor="let item of names|arraySplice:name">
+            {{ item }}
+        </li>
+    </ul>
+    <br>
+    StringConert :
+    <br>
+    {{string|stringConvert}}
+</div>
